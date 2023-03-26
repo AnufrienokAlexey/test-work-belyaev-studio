@@ -1,0 +1,23 @@
+@media (min-width: 1024px) {
+    .main {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 72px 212px 72px 213px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 72px 133px 72px 135px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 18px;
+    }
+    .main {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 72px 49px 72px 46px;
+    }
+}
