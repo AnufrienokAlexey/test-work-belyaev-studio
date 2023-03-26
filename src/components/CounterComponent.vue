@@ -1,7 +1,13 @@
 <template>
     <div class="wrapper flex">
         <div class="top flex">
-            {{ hours }}:{{ minutes }}:{{  second }}
+            <div v-if="hours > 0">
+                {{ hours }}:
+            </div>
+            <div v-if="minutes > 0">
+                {{ minutes }}:
+            </div>
+            {{ second }}
         </div> 
         <div class="bottom flex">
             <div v-if="interval == null">
